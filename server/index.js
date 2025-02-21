@@ -11,9 +11,9 @@ app.use(cors());
 app.use(express.json());
 
 
-mongoose.connect('mongodb+srv://saikiran598108:Once@time@657@cluster0.mongodb.net/test');
-  .then(() => console.log("Connected to MongoDB"))
-  .catch(err => console.error("MongoDB connection error:", err));
+mongoose.connect('mongodb+srv://saikiran598108:Once@time@657@cluster0.mongodb.net/test')
+.then(() => console.log("Connected to MongoDB"))
+.catch(err => console.error("MongoDB connection error:", err));
 
 // Routes
 app.use('/api/auth', require('./middleware/auth'));
